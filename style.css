@@ -1,0 +1,57 @@
+
+
+
+h2{
+    margin: 20px;
+}
+
+input{
+    width: 40%;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+
+}
+
+
+.input-a{
+   padding-top: 10%;
+}
+
+
+.btn-one{
+    padding: 8px 35px;
+    border: none;
+    background-color: navy;
+    color: azure;
+    border-radius: 5px;
+}
+
+
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    input {
+      width: 70%;
+      font-size: 14px;
+    }
+
+    .input-a{
+        padding-top: 20%;
+     }
+
+  }
+  
+
+  @media (max-width: 480px) {
+    input {
+      width: 80%;
+      font-size: 12px;
+      
+    }
+    .input-a{
+        padding-top: 20%;
+     }
+     
+
+  }
