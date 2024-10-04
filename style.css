@@ -1,33 +1,36 @@
 
-
-
-h2{
-    margin: 20px;
+body {
+  background-color: #f4f4f4;
 }
 
-input{
-    width: 40%;
-    height: 2.5rem;
-    border: 1px solid gray;
-    border-radius: 15px;
-
+.input-a {
+  padding: 20px;
 }
 
-
-.input-a{
-   padding-top: 10%;
+.img-container {
+  width: 100%;
+  height: auto;
 }
 
-
-.btn-one{
-    padding: 8px 35px;
-    border: none;
-    background-color: navy;
-    color: azure;
-    border-radius: 5px;
+.movies {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
@@ -39,6 +42,9 @@ input{
     .input-a{
         padding-top: 20%;
      }
+     .form-control {
+      width: 100% !important;
+  }
 
   }
   
