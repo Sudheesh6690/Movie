@@ -1,15 +1,25 @@
-
-body {
-  background-color: #f4f4f4;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.input-a {
+.main{
+  background-image: url(./asset/Bg-img/—Pngtree—holiday\ halloween\ theme\ black\ podium_13348630.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -50px;
+
+}
+
+.main-content {
   padding: 20px;
-}
-
-.img-container {
-  width: 100%;
-  height: auto;
+  height: 40vh;
+  margin-top: 150px;
+  background-image: url(./asset/Bg-img/poster-2610721.jpg);
+  background-size: cover;
+  background-size: 20em;
 }
 
 .movies {
@@ -17,30 +27,135 @@ body {
   flex-wrap: wrap;
 }
 
-.card {
-  border: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+#MovieName{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.card-img-top {
-  height: 300px;
-  object-fit: cover;
+.cards{
+  background-color: #aaaaaa;
 }
+
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: fantasy;
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.589);
+  background-color: #000000;
 }
+
+.btn {
+  width: 15em;
+  height: 3em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+
+}
+
+.text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, #008000,  #008000);
+  transform: translateY(-2px);
+
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+
+ #myButton{
+  /* width: 12em; */
+  background-color: blue;
+
+}
+
+
+
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 0px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 70px;
+  margin-top: 20px;
+  background-color: #aaaaaa;
+
+}
+
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
     input {
-      width: 70%;
+      width: 100%;
       font-size: 14px;
     }
 
-    .input-a{
+    .main-content{
         padding-top: 20%;
+        border: none;
+        height: 60vh;
+        width: 100%;
+    
+
      }
      .form-control {
       width: 100% !important;
@@ -51,13 +166,41 @@ h2 {
 
   @media (max-width: 480px) {
     input {
-      width: 80%;
+      width: 100%;
       font-size: 12px;
       
     }
     .input-a{
         padding-top: 20%;
      }
-     
+
+
+     .btn {
+      width: 10em;
+      height: 2.5em;
+      
+    }
+
+    
+.btn:hover {
+  background: linear-gradient(0deg, #008000,  #008000);
+  transform: translateY(-2px);
+
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+
+    .logo_items img{
+      height: 55px;
+      margin-top: 3em;
+    }
 
   }

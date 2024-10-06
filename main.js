@@ -19,11 +19,13 @@ function search() {
                 const name = item.l;
                 const poster = item.i.imageUrl;
                 const movie = `
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <div class="card h-100">
-                            <img src="${poster}" class="card-img-top" alt="${name} poster">
+                    <div class="col-md-4 col-sm-6 mb-4 ">
+                        <div class="card h-100 bg-secondary">
+                            <img src="${poster}" class="card-img-top " alt="${name} poster">
                             <div class="card-body text-center">
-                                <h5 class="card-title">${name}</h5>
+                                <h5 class="card-title text-white
+
+">${name}</h5>
                             </div>
                         </div>
                     </div>`;
